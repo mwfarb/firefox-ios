@@ -116,7 +116,7 @@ extension PhotonActionSheetProtocol {
                 return self.profile.history.removeFromPinnedTopSites(site)
             }.uponQueue(.main) { result in
                 if result.isSuccess {
-                    success(Strings.AppMenuAddPinToTopSitesConfirmMessage)
+                    success(Strings.AppMenuRemovePinFromTopSitesConfirmMessage)
                 }
             }
         }
