@@ -431,7 +431,7 @@ extension LoginListViewController: SearchInputViewDelegate {
 }
 
 // MARK: - LoginViewModelDelegate
-extension LoginListViewController: LoginDataSourceDelegate {
+extension LoginListViewController: LoginDataSourceViewModelDelegate {
 
     func loginSectionsDidUpdate() {
         loadingView.isHidden = true
